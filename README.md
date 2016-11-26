@@ -27,7 +27,7 @@ Run "dash_detect.py", and just after running it, push the Dash button you want t
 
 
 ### Setup the action
-Edit the "dast_actions.py" file, and add a block similar to this, changing the MAC address with the one you got in the previous step.
+Edit the "dash_actions.py" file, and add a block similar to this, changing the MAC address with the one you got in the previous step.
 ```python
 if pkt[Ether].src=="01:23:45:67:89:AB":
   print "Dash button pressed!"
@@ -36,7 +36,7 @@ You can duplicate the example blocks already written in the file
 After that, you will have to add the mac address to the list in the "sniff" line. Just edit the example or add another "or ether src 01:23:45:67:89:AB" block
 
 ## Run it!
-Run the "dast_actions.py" script, and check that the proper action runs after 2-3 seconds (depending on such a lot of things, maybe more seconds) for each button.
+Run the "dash_actions.py" script, and check that the proper action runs after 2-3 seconds (depending on such a lot of things, maybe more seconds) for each button.
 ```shell
 # python dash_actions.py 
 Dash button pressed!
