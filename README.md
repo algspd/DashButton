@@ -1,7 +1,7 @@
 # DashButton
 Some simple scripts to trigger events with your Dash button
 
-This code is intended to trigger an action when a Dash button is pushed, without having to open the Dash button. You will need a Dash button and a computer running linux (a raspberry pi or some similar board is ok)
+This code is intended to trigger an action when a Dash button is pushed, without having to break the Dash button (it cannot be opened and closed again without breaking the plastic seal). You will need a Dash button and a computer running linux (a raspberry pi or some similar board is ok)
 
 ## How it works?
 When you push a Dash button, it connects to your WiFi network and generates some traffic. What this script does is to read that traffic, identifies the pushed button by its MAC address, and triggers the proper action.
