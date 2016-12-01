@@ -41,8 +41,3 @@ Run the "dash_actions.py" script, and check that the proper action runs after 2-
 # python dash_actions.py 
 Dash button pressed!
 ```
-
-## The "fixme"
-If you understand the code, you will see that it "sleeps" 3 seconds after a matching packet is found. It avoids launching each action several times when a button is pressed.
-When you press the button, it wakes up, connects to the WiFi, sends several packets (some of them exactly the same) and goes again to sleep. Between the first and the last packet, tipically less then 3 seconds pass, but it can obviously fail.
-I'm sure a safer way to do this can be found.
