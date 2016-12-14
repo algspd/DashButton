@@ -23,9 +23,9 @@ def action(pkt):
     if not pkt[Ether].src in last:
       last[pkt[Ether].src]=0
 
-    # If this packet is received before 5 seconds have passed
+    # If this packet is received before 10 seconds have passed
     # from the last one for the same device, do nothing
-    if last[pkt[Ether].src]+5<time.time():
+    if last[pkt[Ether].src]+10<time.time():
 
       # Do something for this device
       if pkt[Ether].src=="01:23:45:67:89:AB":
